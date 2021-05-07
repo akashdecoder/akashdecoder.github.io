@@ -220,18 +220,6 @@
                         <option value="TEL">Telecommunication Engineering</option>
                         <option value="OTHERS">Others</option>
                     </select>
-                    <script>
-                        function insertValue() {
-                            if(document.getElementById("branch") == "OTHERS") {
-                                var promt = prompt("Please Enter branch", "Other Branch");
-                                var select = document.getElementById("branch");
-                                var newOption = document.createElement("Others");
-                                var newOptionVal = document.createTextNode(prompt);
-                                newOption.appendChild(newOptionVal);
-                                select.insertBefore(newOption, select.lastChild);
-                            }
-                        }
-                    </script>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="email">Email (Team Leader)</label>
