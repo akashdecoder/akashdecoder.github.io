@@ -6,7 +6,7 @@
    
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
-    <title>Dynamics Events | Hackathon</title>  
+    <title>Dynamic Hack | SIT, Tumkur</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,7 +37,7 @@
             color: white;
         }
         #abstract {
-            text-align: right;
+            text-align: left;
         }
     </style>
 </head>
@@ -81,6 +81,9 @@
 	<section id="home" class="main-banner parallaxie" style="background: url('mainimages/covid_19_2.gif')">
 		<div class="heading">
             <img src="mainimages/SIT-Tumkur-Logo_150.png"> <img src="mainimages/logo_130.png">
+            <div>
+                <br>
+            </div>
 			<h1>
                 Siddaganga Institute of Technology
             </h1>
@@ -203,7 +206,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label">Branch</label>
-                    <select class="form-control"required>
+                    <select id="branch" onchange="insertValue()" class="form-control"required>
                         <option value="0">---------</option>
                         <option value="BIO">Bio Technology</option>
                         <option value="CHEM">Chemical Engineering</option>
@@ -215,7 +218,24 @@
                         <option value="EIE">Electronics Instrumentation Engineering</option>
                         <option value="MECH">Mechanical Engineering</option>
                         <option value="TEL">Telecommunication Engineering</option>
+                        <option value="OTHERS">Others</option>
                     </select>
+                    <script>
+                        function insertValue() {
+                            if(document.getElementById("branch") == "OTHERS") {
+                                var promt = prompt("Please Enter branch", "Other Branch");
+                                var select = document.getElementById("branch");
+                                var newOption = document.createElement("Others");
+                                var newOptionVal = document.createTextNode(prompt);
+                                newOption.appendChild(newOptionVal);
+                                select.insertBefore(newOption, select.lastChild);
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email (College)</label>
+                    <input type="email" id="email" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="email">Email (College)</label>
@@ -243,22 +263,59 @@
 
     <div id="services" class="section lb">
         <div class="container">
-           <div class="section-title text-center">
-               <h3>Sponsors</h3>
-               <p></p>
-           </div>
-
-           <div class="row">
-            <div class="col-md-4 col-sm-6 col-lg-4">
-                <a href="http://csi-india.org.in/">
-                    <img src="/mainimages/csi-logo.png" class="img-fluid">
-                </a>
-                
+            <div class="section-title text-center">
+                <h3>Sponsors</h3>
             </div>
-            <div class="col-md-4 col-sm-6 col-lg-4">
-                <a href="https://devfolio.co/home/">
-                    <img src="/mainimages/devfolio_logo.png" class="img-fluid">
-                </a>
+            <div class="section-title">
+                <h2 id="abstract">Platinum Sponsors</h2>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <a href="http://csi-india.org.in/">
+                        <img src="mainimages/csi.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <a href="https://devfolio.co/home/">
+                        <img src="mainimages/devfolio_1.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div class="section-title">
+                <h2 id="abstract">Gold Sponsors</h2>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <a href="https://polygon.technology/">
+                        <img src="mainimages/polygon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <a href="https://www.portis.io">
+                        <img src="mainimages/portis_1.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <a href="https://tezos.com">
+                        <img src="mainimages/tezoz.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                    <a href="https://celo.org ">
+                        <img src="mainimages/celo.png" class="img-fluid">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -287,7 +344,10 @@
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
+
+
     
+    <script src="js/extras.js"></script>
     <script src="js/all.js"></script>
 	<script src="js/jquery.mobile.customized.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script> 
