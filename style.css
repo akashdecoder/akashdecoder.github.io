@@ -840,7 +840,7 @@ xclip
 
 .isotope-item {
     z-index: 2;
-    padding: 0;
+    padding: 4;
 }
 
 .isotope-hidden.isotope-item {
