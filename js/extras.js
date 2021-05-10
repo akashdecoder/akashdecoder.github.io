@@ -86,8 +86,19 @@ anime.timeline({loop: true})
 
 
 function visibleQuiz() {
+    $( "#start" ).remove();
     document.getElementById("quiz").style.visibility = "visible";
     document.onkeydown = function (e) {
         return false;
     }
-  }
+}
+
+function visibleQuiz1() {
+    var element = document.getElementById("quiz");
+    element.parentNode.removeChild(element);
+    document.getElementById("quiz2").style.visibility = "visible";
+    document.onkeydown = function (e) {
+        return false;
+    }
+}
+

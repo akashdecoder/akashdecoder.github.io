@@ -18,8 +18,20 @@
 <link rel="stylesheet" href="css/custom.css">
 <script src="js/modernizr.js"></script>
 <script src="js/extras.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!-- <script type="text/javascript">
+    var count = 0;
+    for(var i=0;i<1;i++) {
+        window.location.reload();
+        count+=1;
+    }
+    if
+    alert("")
+    var r = confirm("Successful Message!");
+    if (r == true){
+        window.location.replace("index.html");
+    }
+</script> -->
 
 </head>
 <body id="page-top" class="politics_version" oncopy="return false" oncut="return false" onpaste="return false" class="no-copy-paste">
@@ -57,11 +69,11 @@
         <div class="section-title text-center">
             <h3 class="black-lives-matter" style="font-size: 5vw;"> <b>Dynamics Recruitment 2021</b> </h3>
             <hr>
-            <button type="button" onclick="visibleQuiz()" class="sim-btn hvr-bounce-to-top" value="Start test">Start Test</button>
+            <button id="start" type="button" onclick="visibleQuiz()" class="sim-btn hvr-bounce-to-top" value="Start test">Start Test</button>
         </div>
         <div id="quiz" class="contact_form" style="font-size: 18px; visibility: hidden;">
             <div class="section-title text-center">
-                <h3 style="font-size: 2vw;"> <b>MCQ Round</b> </h3>
+                <h3 style="font-size: 2vw;"> <b>Aptitute MCQ Round</b> </h3>
                 <hr>
             </div>
             <p style="color: black; text-align: left; line-height: 2.0;">
@@ -138,6 +150,94 @@
             </p>
             <br>
             <br>
+            <center>
+                <button type="button" onclick="visibleQuiz1()" class="sim-btn hvr-bounce-to-top text" value="Submit">Submit</button>
+            </center>
+            
+        </div>
+
+        <div id="quiz2" class="contact_form" style="font-size: 18px; visibility: hidden;">
+            <div class="section-title text-center">
+                <h3 style="font-size: 2vw;"> <b>Coding MCQ Round</b> </h3>
+                <hr>
+            </div>
+            <p style="color: black; text-align: left; line-height: 2.0;">
+                <b>Question 1.&ensp;</b><br>
+                What will be the output of the following code snippet? Choose the correct answer.
+                <br>
+                &ensp;int main() {
+                <br>
+                &ensp;&emsp;int a = 10;<br>
+                &ensp;&emsp;int b = 15;<br>
+                &ensp;&emsp;printf("%d", a+b);<br>
+                &ensp;}
+            </p>
+            <p>
+                <input type="radio" id="1" name="q1" value="15">
+                <label style="color: black;" for="male">15</label><br>
+                <input type="radio" id="2" name="q1" value="10">
+                <label style="color: black;" for="female">10</label><br>
+                <input type="radio" id="3" name="q1" value="12">
+                <label style="color: black;" for="other">12</label><br>
+                <input type="radio" id="4" name="q1" value="13">
+                <label style="color: black;" for="other">13</label><br>
+            </p>
+            <br>
+            <br>
+            <p style="color: black; text-align: left; line-height: 2.0;">
+                <b>Question 2.&ensp;</b><br>
+                Which of the following is true about virtual functions in C++ ? 
+                <br>
+            </p>
+            <p>
+                <input type="radio" id="1" name="q1" value="15">
+                <label style="color: black;" for="male">Virtual functions are functions that can be overridden in derived class with the same signature</label><br>
+                <input type="radio" id="2" name="q1" value="10">
+                <label style="color: black;" for="female">Virtual functions enable run-time polymorphism in a inheritance hierarchy.</label><br>
+                <input type="radio" id="3" name="q1" value="12">
+                <label style="color: black;" for="other">If a function is 'virtual' in the base class, the most-derived class's implementation of the function is called according to the actual type of the object referred to, regardless of the declared type of the pointer or reference. In non-virtual functions, the functions are called according to the type of reference or pointer.</label><br>
+                <input type="radio" id="4" name="q1" value="13">
+                <label style="color: black;" for="other">All of the above</label><br>
+            </p>
+            <br>
+            <br>
+            <p style="color: black; text-align: left; line-height: 2.0;">
+                <b>Question 3.&ensp;</b><br>
+                Which of the following is true about virtual functions in C++ ? 
+                <br>
+            </p>
+            <p>
+                <input type="radio" id="1" name="q1" value="15">
+                <label style="color: black;" for="male">Virtual functions are functions that can be overridden in derived class with the same signature</label><br>
+                <input type="radio" id="2" name="q1" value="10">
+                <label style="color: black;" for="female">Virtual functions enable run-time polymorphism in a inheritance hierarchy.</label><br>
+                <input type="radio" id="3" name="q1" value="12">
+                <label style="color: black;" for="other">If a function is 'virtual' in the base class, the most-derived class's implementation of the function is called according to the actual type of the object referred to, regardless of the declared type of the pointer or reference. In non-virtual functions, the functions are called according to the type of reference or pointer.</label><br>
+                <input type="radio" id="4" name="q1" value="13">
+                <label style="color: black;" for="other">All of the above</label><br>
+            </p>
+            <br>
+            <br>
+            <p style="color: black; text-align: left; line-height: 2.0;">
+                <b>Question 3.&ensp;</b><br>
+                Which of the following is true about virtual functions in C++ ? 
+                <br>
+            </p>
+            <p>
+                <input type="radio" id="1" name="q1" value="15">
+                <label style="color: black;" for="male">Virtual functions are functions that can be overridden in derived class with the same signature</label><br>
+                <input type="radio" id="2" name="q1" value="10">
+                <label style="color: black;" for="female">Virtual functions enable run-time polymorphism in a inheritance hierarchy.</label><br>
+                <input type="radio" id="3" name="q1" value="12">
+                <label style="color: black;" for="other">If a function is 'virtual' in the base class, the most-derived class's implementation of the function is called according to the actual type of the object referred to, regardless of the declared type of the pointer or reference. In non-virtual functions, the functions are called according to the type of reference or pointer.</label><br>
+                <input type="radio" id="4" name="q1" value="13">
+                <label style="color: black;" for="other">All of the above</label><br>
+            </p>
+            <br>
+            <br>
+            <center>
+                <button type="button" onclick="visibleQuiz1()" class="sim-btn hvr-bounce-to-top text" value="Submit">Submit</button>
+            </center>
         </div>
 
     </div>
