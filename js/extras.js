@@ -57,6 +57,7 @@ anime.timeline({loop: true})
   });
 
 
+  //Disable copy, cut and paste
   $(document).ready(function() {
     var ctrlDown = false,
         ctrlKey = 17,
@@ -80,3 +81,13 @@ anime.timeline({loop: true})
         if (ctrlDown && (e.keyCode == vKey)) console.log("Document catch Ctrl+V");
     });
 });
+
+
+
+
+function visibleQuiz() {
+    document.getElementById("quiz").style.visibility = "visible";
+    document.onkeydown = function (e) {
+        return false;
+    }
+  }
