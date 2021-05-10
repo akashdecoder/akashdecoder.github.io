@@ -94,9 +94,6 @@ function visibleQuiz() {
 }
 
 
-
-
-
 function visibleQuiz1() {
     var element = document.getElementById("quiz");
     element.parentNode.removeChild(element);
