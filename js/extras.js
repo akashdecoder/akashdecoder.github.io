@@ -87,6 +87,7 @@ anime.timeline({loop: true})
 
 function visibleQuiz() {
     $( "#start" ).remove();
+    $( "#s" ).remove();
     document.getElementById("quiz").style.visibility = "visible";
     document.onkeydown = function (e) {
         return false;
