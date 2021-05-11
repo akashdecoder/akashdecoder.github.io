@@ -103,3 +103,13 @@ function visibleQuiz1() {
     }
 }
 
+
+function coding() {
+    var element = document.getElementById("quiz2");
+    element.parentNode.removeChild(element);
+    document.getElementById("ide").style.visibility = "visible";
+    document.onkeydown = function (e) {
+        return false;
+    }
+}
+
