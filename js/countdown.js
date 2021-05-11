@@ -4,7 +4,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-  let birthday = "May 11, 2021 14:17:00",
+  let birthday = "May 12, 2021 10:30:00",
       countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
 
@@ -18,10 +18,12 @@
 
         //do something later when date is reached
         if (distance < 0) {
-          let countdown = document.getElementById("countdown");
+          let headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown");
 
+          headline.innerText = "";
           countdown.style.display = "none";
-          document.getElementById("end").innerText = "Start the Quiz"
+          document.getElementById("end").innerText = "Registrations are live!! Please refresh the page."
 
           clearInterval(x);
         }
