@@ -4,7 +4,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-  let birthday = "May 12, 2021 10:30:00",
+  let birthday = "May 12, 2021 18:41:00",
       countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
 
@@ -19,11 +19,13 @@
         //do something later when date is reached
         if (distance < 0) {
           let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown");
+              countdown = document.getElementById("countdown"),
+              subheadline = document.getElementById("subheadline");
 
-          headline.innerText = "";
+          subheadline.style.display ="";
           countdown.style.display = "none";
-          document.getElementById("end").innerText = "Registrations are live!! Please refresh the page."
+          document.getElementById("headline").innerText = "As registration rules have been changed, it will be live Tomorrow!!";
+          document.getElementById("subheadline").innerText = "!Sorry for the incovenience!";
 
           clearInterval(x);
         }
